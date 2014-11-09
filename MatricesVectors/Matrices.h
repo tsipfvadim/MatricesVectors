@@ -15,11 +15,18 @@
 @property (nonatomic, copy) NSArray* arrayOfMatrix;
 @property (nonatomic, readonly) NSUInteger rows, columns;
 
--(BOOL)validateArray:(NSArray*)array;//Валідація масиву
--(instancetype)initWithArray:(NSArray*)array;//ініціалізація
--(NSNumber*)itemAtRow:(NSUInteger)rowIndex column:(NSUInteger)colIndex;//доступ до конкретного елементу
--(instancetype)plasMatrix:(Matrices*)matrix;//додавання матриць
--(instancetype)multiplyByScalar:(NSNumber*)number;//множення матриць на скаляр
--(instancetype)multiplyByMatrix:(Matrices*)matrix;//множення матриць
--(instancetype)transposition;//обернена матриця
+-(instancetype)initWithArray:(NSArray*)array;
+
+-(BOOL)validateArray:(NSArray*)array;
+
+-(NSNumber*)itemAtRow:(NSUInteger)rowIndex column:(NSUInteger)colIndex;
+
+-(instancetype)plasMatrix:(Matrices*)matrix;
+
+-(instancetype)multiplyByScalar:(NSNumber*)number;
+
+-(instancetype)multiplyByMatrix:(Matrices*)matrix;
+
+-(instancetype)transposition;
+
 @end

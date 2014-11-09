@@ -31,6 +31,8 @@ int main(int argc, const char * argv[])
         TMVector* vector=[[TMVector alloc] initWithArray:@[@4,@2,@0]];
         vector.delegate=delegate;
         
+        NSLog(@"%lu",vector.columns);
+        
         NSLog(@"%@", matrix1);
         NSLog(@"%@", matrix2);
         NSLog(@"%@", vector);
